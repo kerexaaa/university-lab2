@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --transition-delay: 0.2s;
+  --rounded-lg: 6px;
+}
+
+input,
+button,
+select {
+  border: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5rem;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  transition: var(--transition-delay) ease-in-out;
+}
+
+a:visited {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+h1 {
+  padding: 1.5rem 0;
+  color: #fff;
+  font-weight: 800;
+  text-shadow: 0.25rem 0.25rem 0.25rem black;
+}
+
+nav {
+  padding: 1rem;
+  background-color: #808080;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  background: black;
+  transition: var(--transition-delay) all;
+  border-radius: var(--rounded-lg);
+}
+
+nav ul li a{
+  display: flex;
+  line-height: 2rem;
+  padding-inline: 1rem;
+  border-radius: 5px;
+}
+
+nav ul li:hover {
+  background-color: white;
+}
+
+nav ul li:hover a {
+  color: black;
+}
+
+footer {
+  margin-top: 1.125rem;
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+footer div {
+  background-color: orange;
+  text-align: center;
+  padding: 1rem;
+  flex: 1;
+  justify-content: center;
+}
+
+/* index */
+
+header {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #010101, #808080);
+}
+
+header img {
+  border-radius: 50%;
+  height: 150px;
+}
+
+.info-wrapper {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  justify-content: space-between;
+}
+
+.info-block {
+  flex: .48;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.info-block h2 {
+  color: orange;
+}
+
+.info-block a {
+  width: fit-content;
+  background-color: #010101;
+  transition: all var(--transition-delay);
+  border-radius: var(--rounded-lg);
+}
+
+.info-block a {
+  text-transform: capitalize;
+  padding: .5rem 1rem;
+  margin-top: 1rem;
+}
+
+.info-block a:hover {
+  background-color: orange;
+  color: #010101;
+}
+
+/* home */
+
+.form__section {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.form__section h2 {
+  line-height: 3rem;
+}
+
+.form__section form {
+  width: 400px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.form__section div:not(div.grade) {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: row;
+}
+
+.form__section div label:not(label.grade-label) {
+  width: 50%;
+}
+
+.form__section div input,
+.form__section div select {
+  border-bottom: 1px solid black;
+  margin-top: 0.5rem;
+}
+
+.form__section .grade {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.form__section .grade input {
+  margin-top: 0;
+}
+
+
+textarea {
+  font-size: 20px;
+  margin-top: 0.5rem;
+  outline: none;
+  resize: none;
+  padding: 1rem;
+}
+
+textarea::placeholder {
+  color: gray;
+}
+
+.form__section .checkbox-block {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.form__section .checkbox-block input {
+  margin: 0;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  width: auto;
+  margin-inline: auto;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1rem;
+  transition: var(--transition-delay) ease-in;
+  border-radius: var(--rounded-lg);
+}
+
+button:hover {
+  color: black;
+  background-color: orange;
+}
+
+span a {
+  color: blue;
+}
+
+span a:hover {
+  color: purple;
+}
+
+.search-wrapper {
+  padding: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.search-wrapper input {
+  border-bottom: 1px solid black;
+}
+
+.search-wrapper button {
+  margin-inline: unset;
+}
+
+.search-title {
+  color: orange;
+}
+
+.result-wrapper {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.result-wrapper h2 {
+  padding: 0;
+}
+
+.result-wrapper .info-block {
+  border: .125rem solid black;
+  width: 12.5rem;
+  justify-content: space-between;
+  flex: unset;
+  align-items: center;
+  padding: 1rem;
+}
